@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  color: #e63946;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 260px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background: #1e1e1e;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.panel label {
+  display: block;
+  margin-top: 8px;
+}
+
+.panel select {
+  width: 100%;
+  padding: 6px;
+}
+
+.panel ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.panel li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+/* Tarjetas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+button {
+  background: #b3121e;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  margin: 4px 4px 0 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d41a28;
+}
+
+button.link {
+  background: none;
+  color: #e63946;
+  padding: 0;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  background: #1e1e1e;
+  border-radius: 6px;
+}
+
+/* pantalla general */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.detail {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 6px;
+  width: 340px;
+  max-width: 90%;
+}
+
+.detail img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.star {
+  background: none;
+  color: #e63946;
+  font-size: 28px;
+  padding: 0 2px;
+}
